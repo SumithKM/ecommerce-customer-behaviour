@@ -3,6 +3,7 @@
 An analysis of one year of transactions from a UK-based online gift retailer, covering revenue trends, best-selling products, countries and repeat customers. The focus was on cleaning the data carefully and only stating what the data supports.
 
 **Tools:** Python (pandas, matplotlib) in Google Colab
+
 **Notebook:** [ecommerce_customer_behaviour.ipynb](ecommerce_customer_behaviour.ipynb)
 
 ## Business questions
@@ -25,7 +26,7 @@ An analysis of one year of transactions from a UK-based online gift retailer, co
 | Postage, carriage, manual adjustments, bank charges and gift vouchers set aside (not products) | 2,340 rows |
 | Product sales rows remaining | 522,538 |
 
-**Two data-entry errors found.** The second and sixth largest product lines by gross revenue were orders of about 81,000 and 74,000 units that were cancelled 12 and 16 minutes later. Together they were about £246k of gross revenue. They were removed from the customer analysis and netted off in the revenue analysis. Without this step, the product ranking and the December 2011 revenue would have been wrong.
+**Two data-entry errors found.** The two largest single order lines were orders of about 81,000 and 74,000 units, cancelled 12 and 16 minutes later. They ranked second and sixth among products by gross revenue. Together they were about £246k of gross revenue. They were removed from the customer analysis and netted off in the revenue analysis. Without this step, the product ranking and the December 2011 revenue would have been wrong.
 
 **Net revenue** is gross product sales minus product cancellations, with each cancellation counted in the month it was made. Gross product revenue was £10.25M, cancellations were £0.48M (4.6%), and net product revenue was **£9.77M**.
 
